@@ -19,11 +19,7 @@ $user = "root"; // MySQL Username
 $pass = ""; // même mot de passe que pour te connecter à InfinityFree
 $dbname = "epreuves_db"; // Nom exact de la base */
 /* ---------- CONFIG ---------- */
-$host = "sql202.infinityfree.com"; // MySQL Hostname
-$user = "if0_39714282"; // MySQL Username
-$pass = "MonDomaine1234"; // même mot de passe que pour te connecter à InfinityFree
-$dbname = "if0_39714282_epreuve_db"; // Nom  de la base
-
+require_once "config.php";
 $upload_dir = __DIR__ . '/uploads';
 $allowed_ext = ['pdf','doc','docx','zip','jpg','jpeg','png'];
 $max_upload_size = 8 * 1024 * 1024; // 8 Mo
