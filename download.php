@@ -1,11 +1,6 @@
 <?php
-// Variables de connexion
-$host = "sql202.infinityfree.com"; // MySQL Hostname
-$user = "if0_39714282"; // MySQL Username
-$pass = "MonDomaine1234"; // même mot de passe que pour te connecter à InfinityFree
-$dbname = "if0_39714282_epreuve_db"; // Nom exact de la base
-
-
+ // Nom exact de la base
+require_once "config.php";
 // Connexion MySQL
 $conn = mysqli_connect($host, $user, $pass);
 if (!$conn) die("Erreur MySQL : " . mysqli_connect_error());
